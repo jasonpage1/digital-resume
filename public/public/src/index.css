@@ -22,7 +22,7 @@ h1{color:rgb(190, 144, 27)}
     float: left;
   }
   
-  .left { background-color: darkgray;
+  .left { background-color: rgb(199, 199, 199);
     width: 25%; height: 100%;
   }
   
@@ -33,8 +33,8 @@ h1{color:rgb(190, 144, 27)}
 
 
 .container {
-  width: 84%;
-  background-color: rgb(104, 101, 101);margin-bottom: 10px; text-align: right;
+  width: 82%;
+  background-color: rgb(104, 101, 101);margin-bottom: 10px; text-align: left; margin-right: 6px;
 }
 
 .skills {
@@ -67,5 +67,5 @@ body{ scroll-behavior: smooth;}
 #carouselExampleIndicators{width: 200px; height: 150px; margin-left: 500px; margin-bottom: 30px;margin-right: 100px; }
 #slides{display: inline-flex;}
 
-@media screen and (max-width:670px){.left{width: 100vw;}.logo{margin-left: 300px; width: 30%;}.right {width:100vw ;}}
-@media screen and (max-width:833px){.left{width: 100%;}.row2{width: 100%; margin-right: 5px;}#try{width: 100%; margin-right: 5px};.logo{margin-left: 300px; margin-right: 50px;}}}
+@media screen and (max-width:662px){.left{width: 100vw;}#carouselExampleIndicators{margin-left: 40vw;}.logo{margin-left: 40vw;;}.heading{width: 100vw;}.row2{width: 100vw;}body{width: 100vw;}.right {width:100vw ;}}
+@media screen and (max-width:833px){.left{width: 100%;}.heading{width: 100vw;}.row2{width: 100vw; margin-right: 5px;}#try{ margin-right: 5px};.logo{margin-left: 300px; margin-right: 50px;}}}
