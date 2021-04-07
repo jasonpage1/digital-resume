@@ -4,7 +4,7 @@
 .heading {background-color: rgb(28, 28, 34);}
 h1{color:rgb(190, 144, 27)}
 .name{color:white}
-.row{color:white}
+
 .column {
     float: left;
     width: 33.33%;
@@ -23,7 +23,7 @@ h1{color:rgb(190, 144, 27)}
   }
   
   .left { background-color: rgb(199, 199, 199);
-    width: 25%; height: 100%;
+    width: 25%; height: 100%; margin-left: 5px;
   }
   
   .right {
@@ -53,19 +53,60 @@ h1{color:rgb(190, 144, 27)}
 
 .pp{
   border-radius: 50%; width: 160px; display: block; margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto;}
 
-.logo{ width: 200px; height: 200px; margin-top: 30px; border-radius: 50%; margin-left: 500px; margin-right: 100px;}
+
+#logo{margin-left: 25vw;}
+#logo :hover{animation-name: animatedSquare;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;}
+
+  @keyframes animatedSquare{
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 100%;
+          transform: rotate(90deg);
+        filter: grayscale(100%);}
+    50%  {filter:grayscale(50%);
+          transform: rotate(180deg);}
+    100% {filter: grayscale(20%);
+          transform: rotate(360deg);}
+  }
+#logoimg{width: 200px;height: 200px;}
+
+
 #ultag {list-style-type: none; padding: 0%;}
 .litag {margin-top: 15px; font-size: larger; text-align: center; padding-left: 0px;}
 .atag {text-decoration: none; color: black; background-color: rgb(202, 188, 123); padding: 5px;border-radius: 25%;}
-
 .litag :hover{ background-color:burlywood}
+.atag{ scroll-behavior: smooth;}
+#carouselExampleIndicators{width: 200px; height: 150px; margin-left: 45vw;}
 
-body{ scroll-behavior: smooth;}
-#carouselExampleIndicators{width: 200px; height: 150px; margin-left: 500px; margin-bottom: 30px;margin-right: 100px; }
-#slides{display: inline-flex;}
 
-@media screen and (max-width:662px){.left{width: 100vw;}#carouselExampleIndicators{margin-left: 40vw;}.logo{margin-left: 40vw;;}.heading{width: 100vw;}.row2{width: 100vw;}body{width: 100vw;}.right {width:100vw ;}}
-@media screen and (max-width:833px){.left{width: 100%;}.heading{width: 100vw;}.row2{width: 100vw; margin-right: 5px;}#try{ margin-right: 5px};.logo{margin-left: 300px; margin-right: 50px;}}}
+
+
+
+@media screen and (max-width:662px){
+  .left{width: 100vw;}
+  #carouselExampleIndicators{margin-left: 40vw;}
+  .logo{margin-left: 40vw;;}
+  .heading{width: 100vw;}
+  .row2{width: 100vw;}
+  body{width: 100vw;}
+  .right {width:100vw ;}}
+
+@media screen and (max-width:833px){
+  #try.column.right{margin-left: 5px;width: 100vw; margin-right: 0%;}
+   .left{width: 100vw;}
+   .heading{width: 100vw;}
+   .row2{width: 100vw;}
+   #logoimg{width: 25vw; height: 25vw;}
+   #carouselExampleIndicators{width:25vw;height: 23vw; margin-bottom: 2vw; }
+
+  #experience{margin-left: 10px;}
+  #about{margin-left: 10px;}
+  .info1{margin-left: 10px;}
+  .info2{margin-left: 10px;}
+  #intrests{margin-left: 10px;}
+  #courses{margin-left: 10px;}
+  
+  }

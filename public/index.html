@@ -16,7 +16,7 @@
   <title>CV</title>
 </head>
 
-<body style="background-color: rgb(255, 255, 255)">
+<body >
 
   <!--head-->
   <div class="heading" style="text-align: center; background-image: url(img/img5.jpg)">
@@ -44,8 +44,8 @@
 
   <!--body left-->
 
-  <div class="row2">
-    <div class="column left">
+  <div class="row">
+    <div class="column left" style="margin-left: 5px">
       <img class="pp" src="img/self.jpg" alt="self" />
 
       <hr style="margin-top: 0" />
@@ -70,13 +70,13 @@
       </div>
 
       <hr style="margin-left: 6px;" />
-      <div style="margin-left: 6px;">
-        <h3 id="education"><b>Education</b></h3>
+      <div style="margin-left: 5px;">
+        <h3 id="education"><b style="margin-left: 8px;"> Education</b></h3>
         <hr />
-        <p>BCOM Management Science Degree</p>
-        <p>Stellenbosch University / 2019</p>
-        <p>High school graduate</p>
-        <p>Somerset West Private / 2014</p>
+        <p style="margin-left: 8px;">BCOM Management Science Degree</p>
+        <p style="margin-left: 8px;">Stellenbosch University / 2019</p>
+        <p style="margin-left: 8px;">High school graduate</p>
+        <p style="margin-left: 8px;">Somerset West Private / 2014</p>
       </div>
       <hr />
 
@@ -122,7 +122,8 @@
     <div class="column right" style="margin-left: 5px;" id="try">
       <h3 id="about"><b>Personal Profile</b></h3>
       <hr />
-      <p style="margin-right: 5px;">
+      
+      <p style="margin-right: 5px;" class="info1">
         I am an energetic, ambitious person with good interpersonal skills,
         backed up with a strong analytical ability. Thriving under pressure to
         get work done. Always friendly, outgoing formulating good
@@ -130,9 +131,11 @@
         my desire to succeed in all aspects of my life. Given an opportunity I
         will work beyond expectations.
       </p>
+    
       <hr />
       <h3 id="experience"><b>Work Experience</b></h3>
       <hr />
+      <div class="info2">
       <p>
         <b><u>Company</u> :</b>Eldora
       </p>
@@ -153,10 +156,12 @@
         included food and kitchen preparation, serving customers, keeping
         stock count, and restocking inventory.
       </p>
+      </div>
       <hr />
       <h3 id="courses"><b>Courses</b></h3>
       <hr />
       <div class="courses" style="display: inline-flex">
+
         <ul>
           <li>
             Master Microsoft Excel Macros and Excel VBA
@@ -188,13 +193,16 @@
             <a href="https://www.udemy.com/certificate/UC-d29df64d-77b8-4eb6-bbd1-e8ebfa082796/"><br />Certificate</a>
           </li>
         </ul>
-        <img class="logo" src="img/udemy.jpg" alt="Udemy logo" />
-      </div>
+        <div id="logo">
+          <img id="logoimg" src="img/udemy.jpg" alt="Udemy logo" /></div>
+        </div>
+      
+
+      
       <hr />
-      <div>
         <h3 id="intrests">Intrests</h3>
         <hr />
-      </div>
+     <div style="display: inline-flex;">
       <div id="slides">
         <ul>
           <li>Traveling</li>
@@ -203,8 +211,9 @@
           <br />
           <li>Investments</li>
         </ul>
+      </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide bg-light" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -230,7 +239,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
+      </div>
+  </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>
